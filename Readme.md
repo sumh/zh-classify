@@ -19,7 +19,7 @@ npm install zh-classify
 正负语料比例`31197/32555`
 
 ```js
-const Bayes = require('./zh-classify').Bayes;
+const Bayes = require('zh-classify').Bayes;
 
 // 实例
 const sentiment = new Bayes();
@@ -44,7 +44,7 @@ console.log(sentiment.clf('这个天气也太差了'));
 会在语料文件夹下生成`dirName-model-bayes.json`的模型文件
 
 ```js
-const Bayes = require('./zh-classify').Bayes;
+const Bayes = require('zh-classify').Bayes;
 
 // 实例
 const bayes = new Bayes();
@@ -61,7 +61,7 @@ bayes.train('./cropus/news');
 创建分类器实例时调用模型路径，使用分类器
 
 ```js
-const Bayes = require('./zh-classify').Bayes;
+const Bayes = require('zh-classify').Bayes;
 
 // 实例
 const bayes = new Bayes('./cropus/news/news-model-bayes.json');
@@ -84,7 +84,7 @@ console.log(bayes.clf('好像有点感冒，我得吃点药了'));
 与`python` **SnowNLP**情感分析相同大小语料库进行对比
 
 ```js
-const Bayes = require('./zh-classify').Bayes;
+const Bayes = require('zh-classify').Bayes;
 
 // 实例
 const sentiment = new Bayes();
